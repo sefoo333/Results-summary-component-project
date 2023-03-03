@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.par {
+    display: flex;
+    box-shadow: 3px 7px 12px 1px hsl(241deg 100% 89%);
+    border-radius: 15px
+}
+
+.par .window-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 15px;
+}
+
+.par .window-1 .degree {
+    padding: 30px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+/* window-2 */
+
+.par .window-2 {
+    padding: 30px 50px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+.par .window-2 .ele {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 300px;
+    background-color: bisque;
+}
+
+.par .window-2 .ele .too {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.par .window-2 .ele .too span {
+    margin-left: 10px;
+}
+
+
+.par .window-2 .ele .too-2 .one {
+    margin-right: 5px;
+    color: hsl(224, 30%, 27%);
+}
+
+.par .window-2 .ele .too-2 .two {
+    color: hsl(241, 100%, 89%);
+}
+
+.par .window-2 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 25px;
+    width: 100%;
+    height: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.par .window-2 .button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    transition: 0.5s
+}
+
+.par .window-2 .button:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+@media screen and (max-width:375px) {
+
+    .par {
+        flex-direction: column;
+    }
+
+}
